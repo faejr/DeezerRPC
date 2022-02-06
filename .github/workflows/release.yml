@@ -42,7 +42,7 @@ jobs:
       run: |
         npm ci
     - name: fix token
-      uses: datamonsters/replace-action
+      uses: datamonsters/replace-action@v2
       with:
         files: 'src/app/app.ts'
         replacements: '%DISCORD_TOKEN%=${{ secrets.DISCORD_TOKEN }}'
@@ -75,7 +75,7 @@ jobs:
       run: |
         npm ci
     - name: fix token
-      uses: datamonsters/replace-action
+      uses: datamonsters/replace-action@v2
       with:
         files: 'src/app/app.ts'
         replacements: '%DISCORD_TOKEN%=${{ secrets.DISCORD_TOKEN }}'
@@ -108,7 +108,7 @@ jobs:
       run: |
         npm ci
     - name: fix token
-      uses: datamonsters/replace-action
+      uses: datamonsters/replace-action@v2
       with:
         files: 'src/app/app.ts'
         replacements: '%DISCORD_TOKEN%=${{ secrets.DISCORD_TOKEN }}'
