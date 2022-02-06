@@ -1,6 +1,6 @@
 {
   "name": "deezerrpc",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Deezer integrated with the Discord Rich Presence.",
   "main": "build/main.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "dist-linux": "npm run build && electron-builder --linux"
   },
   "build": {
-    "appId": "com.brasileiro.deezerrpc",
+    "appId": "xyz.liljeberg.deezerrpc",
     "asar": "true",
     "productName": "DeezerRPC",
     "icon": "./assets/icon.png",
