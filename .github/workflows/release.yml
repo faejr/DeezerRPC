@@ -44,8 +44,8 @@ jobs:
     - name: fix token
       uses: datamonsters/replace-action
       with:
-        files: 'src\app\app.ts'
-        replacements: 'discordClientID: \'\'=${{ secrets.DISCORD_TOKEN }}'
+        files: 'src/app/app.ts'
+        replacements: '%DISCORD_TOKEN%=${{ secrets.DISCORD_TOKEN }}'
     - name: npm run build
       run: |
         npm run dist-mac
@@ -77,8 +77,8 @@ jobs:
     - name: fix token
       uses: datamonsters/replace-action
       with:
-        files: 'src\app\app.ts'
-        replacements: 'discordClientID: \'\'=${{ secrets.DISCORD_TOKEN }}'
+        files: 'src/app/app.ts'
+        replacements: '%DISCORD_TOKEN%=${{ secrets.DISCORD_TOKEN }}'
     - name: npm run build
       run: |
         npm run dist-win
@@ -110,8 +110,8 @@ jobs:
     - name: fix token
       uses: datamonsters/replace-action
       with:
-        files: 'src\app\app.ts'
-        replacements: 'discordClientID: \'\'=${{ secrets.DISCORD_TOKEN }}'
+        files: 'src/app/app.ts'
+        replacements: '%DISCORD_TOKEN%=${{ secrets.DISCORD_TOKEN }}'
     - name: npm run build
       run: |
         npm run dist-linux
