@@ -15,7 +15,7 @@
     "dist-linux": "npm run build && electron-builder --linux"
   },
   "build": {
-    "appId": "xyz.liljeberg.deezerrpc",
+    "appId": "gay.faejr.deezerrpc",
     "asar": "true",
     "productName": "DeezerRPC",
     "icon": "./assets/icon.png",
